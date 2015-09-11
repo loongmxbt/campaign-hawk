@@ -1,0 +1,68 @@
+@import url(http://fonts.useso.com/css?family=Open+Sans:300);
+
+$font-stack: 'Open Sans', sans-serif;
+$default-text-color: rgba(107,117,139,1);
+
+
+body, p, h1, h2, h3, h4, ul, li  {
+  font-family: $font-stack;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 15px 0px #888;
+  background-color: rgba(250,250,250,1);
+  width: 60px;
+  height: 100vh;
+}
+
+.sidenav-list {
+  &:first-child {
+    padding-top: 20px;
+  }
+  list-style-type: none;
+}
+
+.sidenav-list-item {
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  opacity: 0.54;
+  font-size: 1.6em;
+  justify-content: center;
+}
+
+.sidenav-tooltip {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  background-color: #fff;
+  height: 3em;
+  padding-bottom: 4px;
+  margin-left: 30px;
+  position: absolute;
+  box-shadow: 0px 2px 8px 0px #888;
+  visibility: hidden;
+  display: none;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+p {
+  color: $default-text-color;
+  white-space: nowrap;
+  font-size: 1.5em;
+  padding: 10px;
+  align-self: center;
+}
+
+.tail {
+  border: 10px solid;
+  border-color: transparent #fff transparent transparent;
+  position: absolute;
+  top: 13px;
+  left: -20px;
+}
